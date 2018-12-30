@@ -1,0 +1,22 @@
+if __name__ == '__main__':
+    y =[]
+    z=[]
+    N = int(raw_input())
+    for x in range(N):
+        cmd = raw_input().split()
+        y.append(cmd)
+    for v in range(0,len(y)):
+        if y[v][0]=="insert":
+            z.insert(int(y[v][1]),int(y[v][2]))
+        elif y[v][0]=="print":
+            print(z)
+        elif y[v][0]=="remove":
+            z.remove(int(y[v][1]))
+        elif y[v][0]=="append":
+            z.append(int(y[v][1]))
+        elif y[v][0]=="pop":
+            z.pop()
+        elif y[v][0]=="sort":
+            z.sort()
+        elif y[v][0]=="reverse":
+            z.reverse()
