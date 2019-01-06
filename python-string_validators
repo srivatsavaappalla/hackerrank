@@ -1,0 +1,38 @@
+if __name__ == '__main__':
+    count=0
+    c=0
+    v=0
+    b=0
+    n=0
+    s = raw_input()
+    for x in s:
+        if x.isalnum():
+            count=count+1
+        if x.isalpha():
+            c=c+1
+        if x.isdigit():
+            v=v+1
+        if x.islower():
+            b=b+1
+        if x.isupper():
+            n=n+1
+    if (count >= 1):
+        print "True"
+    else:
+        print "False"
+    if (c>=1):
+        print "True"
+    else:
+        print "False"
+    if (v>=1):
+        print "True"
+    else:
+        print "False"
+    if (b>=1):
+        print "True"
+    else:
+        print "False"
+    if (n>=1):
+        print "True"
+    else:
+        print "False"
